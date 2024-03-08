@@ -1,0 +1,24 @@
+{
+  "name": "Hyperblox",
+  "short_name": "Hyperblox",
+  "description": "Hyperblox is a hypersonic L1 Blockhain",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "any",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "scope": "/",
+  "lang": "en"
+}

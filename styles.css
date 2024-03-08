@@ -1,0 +1,604 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  /* ensure that box-sizing is inherited properly and allows 
+  you to easily change the box-sizing behavior for specific 
+  elements if needed without affecting the entire page. */
+  box-sizing: inherit;
+}
+
+html {
+  /* this defines what 1rem is */
+  font-size: 62.5%;
+  /* ensures that the border-box box-sizing model is used 
+  globally for all elements on the page */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #ffffff;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  background-image: linear-gradient(
+      98.3deg,
+      rgb(0, 0, 0, 0.95) 15.6%,
+      rgba(128, 2, 2, 0.9) 97.7%
+    ),
+    url("./img/bg.webp");
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 3.5rem; */
+  padding-top: 3.5rem;
+  padding-bottom: 0.5rem;
+  align-items: center;
+  background-color: linear-gradient(
+    98.3deg,
+    rgb(0, 0, 0, 0.85) 15.6%,
+    rgba(128, 2, 2, 0.9) 97.7%
+  );
+  z-index: 1000; /* Set a higher z-index value */
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #fff; /* Change color as needed */
+}
+
+.menu ul li a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007bff; /* Change color as needed */
+  transition: width 0.3s ease;
+}
+
+.menu ul li a:hover:before {
+  width: 100%;
+}
+
+section {
+  padding: 0 0;
+}
+
+.what {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 3.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0rem;
+  align-items: center;
+  color: #6b180d;
+  background: #f1cac3;
+}
+
+.what__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  margin-top: 3.5rem;
+  margin-bottom: 9rem;
+  margin-left: 10rem;
+  align-items: center;
+}
+
+.what__card {
+  margin-left: 8rem;
+  margin-right: 8rem;
+  align-items: center;
+}
+
+.what__card img {
+  height: 25rem;
+  width: 25rem;
+  padding-left: 3rem;
+  align-self: center; /* Align image to center within its container */
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.what__card img:hover {
+  transform: scale(1.05); /* Apply scale transformation on hover */
+}
+
+.what__subtitle {
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  align-items: center;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+.logo {
+  /* display: inline-block; */
+  display: flex; /* Use Flexbox */
+  align-items: center; /* Vertically center the items in the container */
+  justify-content: center; /* Horizontally center the items (optional) */
+  margin-left: 16.5rem;
+  font-size: 2.4rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+.menu {
+  display: inline-block;
+}
+
+li {
+  display: inline-block;
+  font-size: 2.6rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  margin: 0 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hyperblox_logo {
+  height: 5rem;
+  width: 5rem;
+  margin-right: 2rem;
+}
+
+.country-select {
+  display: inline-block;
+  margin-right: 16.5rem;
+}
+
+.country-select__button {
+  height: 5rem;
+  width: 5rem;
+
+  /* background-color: transparent; */
+}
+
+.country-select__button__icon :last-child {
+  margin-right: 16rem;
+}
+
+.country-select__button__icon {
+  height: 4rem;
+  width: 4rem;
+}
+
+.country-select__button__arrow {
+  height: 2rem;
+  width: 2rem;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.counter__item {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 8rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.2rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+}
+
+.random__h3 {
+  padding-bottom: 6rem;
+  color: #6b180d;
+}
+
+/* .hero {
+  display: flex;
+} */
+
+.hero__title {
+  /* keep text centered but reduce width of container */
+  margin: 0 auto;
+  max-width: 76rem;
+  margin-top: 5rem;
+  margin-bottom: 1.7rem;
+}
+
+.hero__subtitle {
+  margin-bottom: 45rem;
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.buttons__button {
+  position: absolute;
+  bottom: 10rem;
+  left: 50%; /* Position the left edge of the buttons div at 50% of the containing div's width */
+  transform: translateX(
+    -50%
+  ); /* Move the buttons div back by 50% of its own width, 
+  position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-bottom: 4.9rem; */
+  align-items: center;
+  background: #000000;
+  /* background: #202634; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-top: 3.5rem; */
+  align-items: center;
+  color: #6b180d;
+}
+
+.payment-types__text {
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 2.7rem;
+  text-transform: capitalize;
+}
+
+.payment-types__item {
+  display: inline-block;
+  margin: 0 3rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+}
+
+.counter__item__days,
+.counter__item__hours,
+.counter__item__minutes,
+.counter__item__seconds {
+  padding: 0 2.3rem;
+  font-size: 3rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+.counter__item__text {
+  font-size: 1.3rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.buttons__button {
+  padding: 1.8rem 2.4rem;
+  margin-right: 3rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4rem;
+}
+
+.buttons__button--primary {
+  background-color: #ef443b;
+  transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.buttons__button--primary:hover {
+  background-color: #ff6f6b; /* Change to a slightly lighter color on hover */
+}
+
+.buttons__button:last-child {
+  margin-right: 0;
+}
+
+.technology {
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 3.5rem; */
+  /* padding-top: 0rem;
+  padding-bottom: 0rem; */
+  /* margin-bottom: 4.9rem; */
+  align-items: center;
+
+  background: #000000;
+
+  /* background: #202634; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-top: 3.5rem; */
+
+  align-items: center;
+  color: #6b180d;
+}
+
+.technology__cards {
+  display: flex;
+  grid-template-columns: 1fr;
+
+  margin-top: 3.5rem;
+  margin-bottom: 6.9rem;
+  margin-left: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.technology__card {
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 4rem;
+  max-width: 80rem;
+  text-align: center;
+  color: ivory;
+}
+
+.technology__card img {
+  width: 70rem;
+  transition: filter 0.3s ease; /* Add transition for smooth effect */
+  filter: grayscale(100%); /* Convert image to monochrome */
+}
+
+.technology__card img:hover {
+  filter: brightness(150%) saturate(150%) hue-rotate(10deg); /* Apply glowing effect on hover */
+}
+
+.technology__title {
+  /* keep text centered but reduce width of container */
+  color: ivory;
+  margin: 0 auto;
+  max-width: 76rem;
+  margin-top: 9rem;
+  margin-bottom: 1.7rem;
+}
+
+.technology__subtitle {
+  color: ivory;
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  margin-bottom: 5rem;
+  align-items: center;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+.random {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-top: 3.5rem; */
+  padding-top: 3.5rem;
+  padding-bottom: 0.5rem;
+  align-items: center;
+
+  background: #f1cac3;
+
+  /* background: #202634; */
+
+  color: #6b180d;
+}
+
+.random__cards {
+  display: flex;
+  grid-template-columns: 1fr;
+
+  margin-top: 3.5rem;
+  margin-bottom: 4.9rem;
+  margin-left: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.random__card {
+  margin-left: 8rem;
+  margin-right: 8rem;
+  max-width: 80rem;
+  text-align: center;
+  color: #6b180d;
+}
+
+.technology__card img {
+  width: 70rem;
+}
+
+.random__title {
+  /* keep text centered but reduce width of container */
+  font-size: 6rem;
+  color: #6b180d;
+  margin: 0 auto;
+  max-width: 92rem;
+  margin-top: 9rem;
+  margin-bottom: 6rem;
+}
+
+.random__subtitle {
+  color: #6b180d;
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  align-items: center;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 1.6rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 6rem 6rem 2rem 6rem;
+}
+
+.footer {
+  padding: 2rem 0;
+  border-top: 1px solid #eee;
+  background-color: #000000;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  align-items: start;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-top: 0;
+  text-align: left;
+}
+
+.nav-footer li {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.footer-nav {
+  gap: 0;
+}
+
+.nav-col {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  text-align: left;
+  align-items: start;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+  margin-right: 2rem;
+}
+
+.logo-footer {
+  margin-right: 1.5rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: ivory;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.hyperblox-logo-footer {
+  height: 5rem;
+  width: 5rem;
+  margin-right: 2rem;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.address-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: ivory;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: ivory;
+}
+
+.what__subtitle + p {
+  font-size: 1.6rem; /* Adjust the font size for the second paragraph */
+  margin-bottom: 5rem;
+}

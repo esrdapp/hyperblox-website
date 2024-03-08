@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/hyperblox_logo.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./scripts.js"></script>
+
+    <link href="./styles.css" rel="stylesheet" />
+    <link href="./queries.css" rel="stylesheet" >
+
+    <title>Hyperblox - 世界上最快的 L1 EVM 區塊鏈</title>
+  </head>
+
+  <body>
+
+<!-- Header section -->
+<header>
+  <nav>
+    <div class="logo">
+      <img class="hyperblox_logo" src="./img/hyperblox_logo.png" alt="hyperblox logo">
+      <span>
+        Hyperblox
+      </span>
+    </div>
+    <div class="menu">
+      <ul class="menu-list">
+        <li><a href="#tech">TECH</a></li>
+        <li><a href="#boe">BOE</a></li>
+        <li><a href="#trng">TRNG</a></li>
+        <li><a href="https://hpb.gitbook.io/high-performance-blockchain/" target="_blank">DEVELOPERS</a></li>
+        <li><a href="https://medium.com/hpb-foundation" target="_blank">NEWS</a></li>
+      </ul>
+      <div class="burger-menu" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+    <div class="country-select">
+      <a href="index.html" class="country-select__button">
+        <img class="country-select__button__icon" src="./img/us.png" alt="globe icon">
+      </a>
+      <a href="index-cn.html" class="country-select__button">
+        <img class="country-select__button__icon" src="./img/china.png" alt="globe icon">
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero main text section -->
+  <div class="hero">
+    <h1 class="hero__title">Hyperblox</h1>
+    <p class="hero__subtitle">Hypersonic L1 EVM Blockchain Solutions</p>
+  </div>
+
+  <!-- Buttons -->
+  <div class="buttons">
+    <button id="playVideoBtn" class="buttons__button buttons__button--primary">
+      Play Video
+    </button>
+  </div>
+  <!-- End of buttons -->
+</header>
+<!-- End of header section -->
+
+
+  <!-- Tech section -->
+        <div id="tech" class="section">
+
+          <section>
+            <div class="what">
+              <h1 class="hero__title">
+                什麼是 Hyperblox</h1>
+              <p class="what__subtitle">
+                Hyperblox 是一種高超音速 L1 EVM 區塊鏈解決方案
+                旨在成為全球最快、最高效的區塊鏈
+                世界。它提供第 1 層可擴展性以及超過的 tps 速度
+                大多數 L2 區塊鏈。 Hyperblox 能夠處理超過 5000 筆交易
+                每秒，每筆交易的平均 Gas 費約為 0.001 美元。
+              </p>
+
+              <p>在175,000筆簽章交易測試中，達到的峰值TPS為12500。平均TPS為6730。</p>
+              
+              <div class="what__cards">
+                <div class="what__card">
+                  <img src="./img/boe_tk.jpg" alt="icon1" />
+                  <h2>京東方硬體加速器</h2>
+                  <p>
+                    區塊鏈卸載引擎卡是高度相容的客製化硬體晶片組
+                    具有嵌入式 ECDSA 模組和硬體隨機數產生器。
+                  </p>
+                </div>
+                
+                <div class="what__card">
+                  <img src="./img/boe_node.jpg" alt="icon1" />
+                  <h2>節點網路</h2>
+                  <p>
+                    HPB節點網路由社群投票和委託共同決定
+                    由 Hyperblox HPB 基金會提供。
+                  </p>
+                </div>
+                
+                <div class="what__card">
+                  <img src="./img/boe_code.jpg" alt="icon1" />
+                  <h2>HPB 共識演算法</h2>
+                  <p>
+                    HPB利用效能證明共識演算法（PoP），
+                    它從現有的池中產生 HP 節點
+                    每 200 個區塊就有一個候選節點。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+<!-- End of tech section -->
+
+<!-- BOE section -->
+<div id="boe" class="section">
+
+  <section>
+    <div class="technology">
+      <h1 class="technology__title">核心技術</h1>
+      <p class="technology__subtitle">
+        BOE 卡為 HPB 主節點提供動力。它是由 HPB 設計和開發的實體開源異質處理系統卡，協調硬體、韌體和相應的匹配軟體，簡化整個流程。為了實現目標效能和高並發運算加速，BOE結合了CPU串列能力和現場可程式閘陣列（FPGA）/ASIC晶片的平行處理能力。
+      </p>
+      
+      <div class="technology__cards">
+        <div class="technology__card">
+
+          <div class="random__h3">
+
+            <img src="./img/boe-card-inverted.jpg" alt="icon1" />
+          </div>
+            
+
+          <h2>京東方硬體加速器</h2>
+          <p>
+            區塊鏈卸載引擎是高度相容的客製化硬體晶片組
+            具有嵌入式 ECDSA 模組和硬體隨機數產生器。
+          </p>
+        </div>
+        
+        
+      </div>
+    </div>
+  </section>
+</div>
+  <!-- End of BOE section -->
+  
+  <!-- TRNG section -->
+  <div id="trng" class="section">
+
+    <section>
+      <div class="random">
+        <h1 class="random__title">真隨機數產生器</h1>
+        <p class="random__subtitle">
+          TRNG 使用可驗證的隨機種子從物理現像中提取隨機性。可用於提取隨機性的物理現象的例子是雷射中發現的光學雜訊或原子中的放射性衰變。從完全基於軟體的區塊鏈的角度來看，產生真實隨機數的能力已被證明是一項具有挑戰性的任務。
+        </p>
+        
+        <p class="random__subtitle">
+          HPB 的 TRNG 利用 BOE 上的類比數位轉換器來感測微小的電壓變化（小至 0.00001 伏特）。這個不斷變化的數字用於幫助產生添加到鏈上每個新區塊的 256 個數字和字母的真正隨機字串。
+        </p>
+        
+        <div class="random__cards">
+          <div class="random__card">
+            <img src="./img/dice.png" alt="icon1" />
+            <h2>每個區塊都有免費隨機數</h2>
+
+
+            <div class="random__h3">
+
+              <h3 style="background-color: #6b180d; border-radius: 10px; padding: 10px;">
+                <a href="http://hscan.org" style="color: white; text-decoration: none; transition: text-shadow 0.3s;">點擊查看即時隨機數</a>
+              </h3>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <!-- End of TRNG section -->
+    
+    
+    <!-- Footer  -->
+    <footer class="footer">
+      <div class="container grid grid--footer">
+            <div class="logo-col">
+              <a href="#" class="footer-logo">
+                <img class="hyperblox-logo-footer" src="./img/hyperblox_logo.png" alt="hyperblox logo">
+              </a>
+      
+      
+              <p class="copyright">
+                Copyright &copy;
+                <span class="year">2024</span> Hyperblox (HPB) 保留所有權利。
+              </p>
+            </div>
+      
+            <div class="address-col">
+              <p class="footer-heading">聯絡我們</p>
+      
+              <a class="footer-link" href="info@hpb.io">info@hpb.io</a>
+              </p>
+            </div>
+      
+            <nav class="nav-col">
+              <p class="footer-heading">有用的連結</p>
+              <ul class="nav-footer">
+                <li>
+                  <a class="footer-link" href="https://hackernoon.com/provable-random-numbers-in-blockchain">
+                    隨機數</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://www.youtube.com/watch?v=Pi9RWqpUSis">執行長訪談</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://hscan.org/faucet/">龍頭</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://hpb.gitbook.io/high-performance-blockchain/developers/sdks">SDK</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://www.hpb.io/post-362">TPS報告</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://vote.hpbnode.com/">Masternodes</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null">Remix IDE</a>
+                </li>
+              </ul>
+            </nav>
+
+            
+      
+            <nav class="nav-col">
+              <p class="footer-heading">資源</p>
+              <ul class="nav-footer">
+                <li>
+                  <a class="footer-link" href="https://hscan.org">HPB 區塊瀏覽器</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://hpb.gitbook.io/high-performance-blockchain/">Gitbook</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://hpb.gitbook.io/high-performance-blockchain/getting-started/wallets/metamask">設定元掩碼</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://hpb.gitbook.io/high-performance-blockchain/what-is-high-performance-blockchain-hpb/blockchain-offload-engine-boe">BOE INFO</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://github.com/hpb-project">GITHUB</a>
+                </li>
+
+              </ul>
+            </nav>
+      
+            <nav class="nav-col">
+              <p class="footer-heading">社群</p>
+              <ul class="nav-footer">
+                <li>
+                  <a class="footer-link" href="https://t.me/hpbglobal">Telegram</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://twitter.com/METH_on_Blast">Twitter</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://medium.com/@HPB_Global">Medium</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://www.facebook.com/groups/hpbglobal/">Facebook</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://www.reddit.com/r/HPB_Global/">Reddit</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://www.instagram.com/hpbglobal/">Instagram</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://discord.com/invite/dGGThEMExF">Discord</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://www.linkedin.com/company/high-performance-blockchain/">LinkedIn</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://www.youtube.com/@HPBCommunity">YouTube</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
+
+        
+        
+        
+<!-- End of footer -->
+
+
+      </body>
+</html>

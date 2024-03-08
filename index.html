@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/hyperblox_logo.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./scripts.js"></script>
+
+    <link href="./styles.css" rel="stylesheet" />
+    <link href="./queries.css" rel="stylesheet" >
+    <title>Hyperblox - The worlds fastest L1 EVM Blockchain</title>
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="nav-container">
+        <div class="logo">
+          <img class="hyperblox_logo" src="./img/hyperblox_logo.png" alt="hyperblox logo">
+          <span>Hyperblox</span>
+        </div>
+
+        <div class="menu">
+          <ul class="menu-list">
+            <li><a href="#tech">TECH</a></li>
+            <li><a href="#boe">BOE</a></li>
+            <li><a href="#trng">TRNG</a></li>
+            <li><a href="https://hpb.gitbook.io/high-performance-blockchain/" target="_blank">DEVELOPERS</a></li>
+            <li><a href="https://medium.com/hpb-foundation" target="_blank">NEWS</a></li>
+          </ul>
+        </div>
+
+
+
+        <div class="country-select">
+          <a href="index.html" class="country-select__button">
+            <img class="country-select__button__icon" src="./img/us.png" alt="globe icon">
+          </a>
+          <a href="index-cn.html" class="country-select__button">
+            <img class="country-select__button__icon" src="./img/china.png" alt="globe icon">
+          </a>
+        </div>
+        
+
+
+      </nav>
+      <!-- Hero main text section -->
+      <div class="hero">
+        <h1 class="hero__title">Hyperblox</h1>
+        <p class="hero__subtitle">Hypersonic L1 EVM Blockchain Solutions</p>
+      </div>
+      <!-- Buttons -->
+      <div class="buttons">
+        <button id="playVideoBtn" class="buttons__button buttons__button--primary">Play Video</button>
+      </div>
+    </header>
+
+
+  <!-- Tech section -->
+        <div id="tech" class="section">
+
+          <section>
+            <div class="what">
+              <h1 class="hero__title">What is Hyperblox</h1>
+              <p class="what__subtitle">
+                Hyperblox is a hypersonic L1 EVM blockchain solution that is
+                designed to be the fastest and most efficient blockchain in the
+                world. It delivers Layer 1 scalability combined with tps speeds exceeding 
+                most L2 blockchains. Hyperblox is able to process well in excess of 5000+ transactions
+                per second, with average gas fees of around $0.001 per transaction.
+              </p>
+
+              <p> In 175,000 signed transactions tests, the peak TPS achieved was 12500. The average TPS is 6730.</p>
+              
+              <div class="what__cards">
+                <div class="what__card">
+                  <img src="./img/boe_tk.jpg" alt="icon1" />
+                  <h2>BOE Hardware Accelerator</h2>
+                  <p>
+                    The Blockchain Offload Engine card is a highly compatible customized hardware chipset 
+                    with an embedded ECDSA module and a hardware random number generator.
+                  </p>
+                </div>
+                
+                <div class="what__card">
+                  <img src="./img/boe_node.jpg" alt="icon1" />
+                  <h2>Node Network</h2>
+                  <p>
+                    The HPB Node Network is determined by both community voting and delegation 
+                    by the Hyperblox HPB Foundation.
+                  </p>
+                </div>
+                
+                <div class="what__card">
+                  <img src="./img/boe_code.jpg" alt="icon1" />
+                  <h2>HPB Consensus Algorithm</h2>
+                  <p>
+                    HPB utilizes the Proof of Performance consensus algorithm (PoP), 
+                    which generates HP-Nodes from the existing pool of 
+                    Candidate Nodes every 200 blocks.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+<!-- End of tech section -->
+
+<!-- BOE section -->
+<div id="boe" class="section">
+
+  <section>
+    <div class="technology">
+      <h1 class="technology__title">Core Technology</h1>
+      <p class="technology__subtitle">
+        The BOE card powers HPB Master-Nodes. It is a physical, open-source heterogeneous processing system card designed and devloped by HPB, harmonizing hardware, firmware, and corresponding matching software that streamlines the whole process. To achieve target performance and high concurrent computing acceleration, the BOE combines CPU serial capabilities and the parallel processing capabilities of Field-Programmable Gate Arrays (FPGA)/ASIC chips.
+      </p>
+      
+      <div class="technology__cards">
+        <div class="technology__card">
+
+          <div class="random__h3">
+
+            <img src="./img/boe-card-inverted.jpg" alt="icon1" />
+          </div>
+            
+
+          <h2>BOE Hardware Accelerator</h2>
+          <p>
+            The Blockchain Offload Engine is a highly compatible customized hardware chipset 
+            with an embedded ECDSA module and a hardware random number generator.
+          </p>
+        </div>
+        
+        
+      </div>
+    </div>
+  </section>
+</div>
+  <!-- End of BOE section -->
+  
+  <!-- TRNG section -->
+  <div id="trng" class="section">
+
+    <section>
+      <div class="random">
+        <h1 class="random__title">True Random Number Generator</h1>
+        <p class="random__subtitle">
+          TRNG’s use a verifiably random seed to extract randomness from physical phenomena. Examples of physical phenomena which can be used to extract randomness, are the optical noise found in lasers, or the radioactive decay in atoms. From the perspective of an entirely software-based blockchain, the ability to generate true random numbers has proven to be a challenging task.
+        </p>
+        
+        <p class="random__subtitle">
+          HPB's TRNG senses tiny variances in voltage (as small as 0.00001 volts) utilizing an Analog-to-Digital Converter on the BOE. This ever-changing figure is used to help generate the truly random string of 256 digits and letters added to each new block on the chain.
+        </p>
+        
+        <div class="random__cards">
+          <div class="random__card">
+            <img src="./img/dice.png" alt="icon1" />
+            <h2>FREE random numbers at every block</h2>
+
+
+            <div class="random__h3">
+
+              <h3 style="background-color: #6b180d; border-radius: 10px; padding: 10px;">
+                <a href="http://hscan.org" style="color: white; text-decoration: none; transition: text-shadow 0.3s;">Click to view live random numbers</a>
+              </h3>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <!-- End of TRNG section -->
+    
+    
+    <!-- Footer  -->
+    <footer class="footer">
+      <div class="container grid grid--footer">
+            <div class="logo-col">
+              <a href="#" class="footer-logo">
+                <img class="hyperblox-logo-footer" src="./img/hyperblox_logo.png" alt="hyperblox logo">
+              </a>
+      
+      
+              <p class="copyright">
+                Copyright &copy;
+                <span class="year">2024</span> by Hyperblox (HPB) All rights reserved.
+              </p>
+            </div>
+      
+            <div class="address-col">
+              <p class="footer-heading">Contact us</p>
+      
+              <a class="footer-link" href="info@hpb.io">info@hpb.io</a>
+              </p>
+            </div>
+      
+            <nav class="nav-col">
+              <p class="footer-heading">Useful Links</p>
+              <ul class="nav-footer">
+                <li>
+                  <a class="footer-link" href="https://hackernoon.com/provable-random-numbers-in-blockchain">RANDOM NUMBERS</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://www.youtube.com/watch?v=Pi9RWqpUSis">CEO Interview</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://hscan.org/faucet/">Faucet</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://hpb.gitbook.io/high-performance-blockchain/developers/sdks">SDK</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://www.hpb.io/post-362">TPS Report</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://vote.hpbnode.com/">Masternodes</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null">Remix IDE</a>
+                </li>
+              </ul>
+            </nav>
+
+            
+      
+            <nav class="nav-col">
+              <p class="footer-heading">Resources</p>
+              <ul class="nav-footer">
+                <li>
+                  <a class="footer-link" href="https://hscan.org">HPB Block Explorer</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://hpb.gitbook.io/high-performance-blockchain/">Gitbook</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://hpb.gitbook.io/high-performance-blockchain/getting-started/wallets/metamask">SETUP METAMASK</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://hpb.gitbook.io/high-performance-blockchain/what-is-high-performance-blockchain-hpb/blockchain-offload-engine-boe">BOE INFO</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://github.com/hpb-project">GITHUB</a>
+                </li>
+
+              </ul>
+            </nav>
+      
+            <nav class="nav-col">
+              <p class="footer-heading">Socials</p>
+              <ul class="nav-footer">
+                <li>
+                  <a class="footer-link" href="https://t.me/hpbglobal">Telegram</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://twitter.com/METH_on_Blast">Twitter</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://medium.com/@HPB_Global">Medium</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://www.facebook.com/groups/hpbglobal/">Facebook</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://www.reddit.com/r/HPB_Global/">Reddit</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://www.instagram.com/hpbglobal/">Instagram</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://discord.com/invite/dGGThEMExF">Discord</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://www.linkedin.com/company/high-performance-blockchain/">LinkedIn</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="https://www.youtube.com/@HPBCommunity">YouTube</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
+
+        
+        
+        
+<!-- End of footer -->
+
+
+      </body>
+</html>
