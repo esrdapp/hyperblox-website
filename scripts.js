@@ -101,7 +101,12 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add click event listener to each link
   links.forEach(function (link) {
     link.addEventListener("click", function (event) {
-      // Prevent default behavior of link click
+      // Check if it's an external link
+      if (link.getAttribute("href").startsWith("http")) {
+        return; // Let the default behavior proceed for external links
+      }
+
+      // Prevent default behavior of link click for internal links
       event.preventDefault();
 
       // Get the target element's id from the href attribute
