@@ -65,36 +65,6 @@
 // }
 
 document.addEventListener("DOMContentLoaded", function () {
-  var button = document.getElementById("myButton");
-  var videoContainer = document.querySelector(".video-container");
-  var video;
-
-  button.addEventListener("click", function () {
-    button.style.display = "none";
-
-    var iframe = document.createElement("iframe");
-    iframe.setAttribute("width", "960");
-    iframe.setAttribute("height", "450");
-    iframe.setAttribute(
-      "src",
-      "https://player.vimeo.com/video/922422240?autoplay=1&loop=0&background=0&muted=0"
-    );
-    iframe.setAttribute("frameborder", "0");
-    iframe.setAttribute("allow", "autoplay; fullscreen"); // This is the correct way to specify permissions
-    iframe.setAttribute("allowfullscreen", "true");
-
-    video = iframe;
-    videoContainer.appendChild(iframe);
-
-    // Set timeout to reset after 36 seconds
-    setTimeout(function () {
-      button.style.display = "block"; // Show the button
-      videoContainer.removeChild(video); // Remove the video element
-    }, 36500); // 36 seconds in milliseconds
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
   // Get all links in the menu list
   var links = document.querySelectorAll(".menu-list a");
 
@@ -129,5 +99,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Toggle the visibility of the hidden menu
     hiddenMenu.classList.toggle("visible");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var button = document.getElementById("myButton");
+  var videoContainer = document.querySelector(".video-container");
+  var mobileVideoContainer = document.querySelector(".video-container-mobile");
+  var video;
+
+  button.addEventListener("click", function () {
+    button.style.display = "none";
+
+    // Create iframe for larger devices
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("width", "960");
+    iframe.setAttribute("height", "450");
+    iframe.setAttribute(
+      "src",
+      "https://player.vimeo.com/video/922422240?autoplay=1&loop=0&background=1&muted=0"
+    );
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allow", "autoplay; fullscreen");
+    iframe.setAttribute("allowfullscreen", "true");
+
+    video = iframe;
+    videoContainer.appendChild(iframe);
+
+    // Create iframe for smaller devices with muted
+    var mobileIframe = document.createElement("iframe");
+    mobileIframe.setAttribute("width", "320");
+    mobileIframe.setAttribute("height", "221");
+    mobileIframe.setAttribute(
+      "src",
+      "https://player.vimeo.com/video/922422240?autoplay=1&loop=0&background=1&muted=1"
+    );
+    mobileIframe.setAttribute("frameborder", "0");
+    mobileIframe.setAttribute("allow", "autoplay; fullscreen");
+    mobileIframe.setAttribute("allowfullscreen", "true");
+
+    mobileVideoContainer.appendChild(mobileIframe);
+
+    // Set timeout to reset after 36 seconds
+    setTimeout(function () {
+      button.style.display = "block"; // Show the button
+      videoContainer.removeChild(video); // Remove the video element from larger device container
+      mobileVideoContainer.removeChild(mobileIframe); // Remove the video element from smaller device container
+    }, 36500); // 36 seconds in milliseconds
   });
 });
