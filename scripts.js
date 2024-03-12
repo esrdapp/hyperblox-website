@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
     iframe.setAttribute("height", "450");
     iframe.setAttribute(
       "src",
-      "https://player.vimeo.com/video/922422240?autoplay=1&loop=0&background=1&muted=0"
+      "https://player.vimeo.com/video/922422240?autoplay=1&loop=0&background=0&muted=0"
     );
     iframe.setAttribute("frameborder", "0");
     iframe.setAttribute("allow", "autoplay; fullscreen"); // This is the correct way to specify permissions
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
       button.style.display = "block"; // Show the button
       videoContainer.removeChild(video); // Remove the video element
-    }, 37000); // 36 seconds in milliseconds
+    }, 36500); // 36 seconds in milliseconds
   });
 });
 
