@@ -169,11 +169,6 @@
 
   .technology__card {
     margin-bottom: 3.2rem; /* 4rem * 0.8 */
-    max-width: 64rem; /* 80rem * 0.8 */
-  }
-
-  .technology__card img {
-    width: 56rem; /* 70rem * 0.8 */
   }
 
   .technology__title {
@@ -484,9 +479,17 @@
     max-height: 221px;
   }
 
-  .technology__card img {
-    padding-left: 5rem;
-    padding-right: 5rem;
+  .technology__cards {
+    margin-top: 2.8rem; /* 3.5rem * 0.8 */
+    margin-bottom: 5.52rem; /* 6.9rem * 0.8 */
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .technology__card {
+    margin-bottom: 4rem;
+    text-align: center;
+    color: ivory;
   }
 
   .container {
@@ -564,12 +567,6 @@
     font-size: 2rem;
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-
-  .technology__cards {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0%;
   }
 
   .random__title {

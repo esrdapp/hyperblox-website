@@ -403,12 +403,12 @@ h3 {
   margin-left: 8rem;
   margin-right: 8rem;
   margin-bottom: 4rem;
-  max-width: 80rem;
   text-align: center;
   color: ivory;
 }
 
 .technology__card img {
+  max-width: 100%; /* Ensure image never exceeds the width of its container */
   transition: filter 0.3s ease; /* Add transition for smooth effect */
   filter: grayscale(100%); /* Convert image to monochrome */
 }
