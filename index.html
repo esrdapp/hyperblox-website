@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <script src="./scripts.js"></script>
+    <!-- <script src="./scripts.js"></script> -->
 
     <link href="./styles.css" rel="stylesheet" />
     <link href="./queries.css" rel="stylesheet" >
@@ -27,7 +27,7 @@
       <nav class="nav-container">
         <div class="logo">
           <img class="hyperblox_logo" src="./img/hyperblox_logo.png" alt="hyperblox logo">
-          <span>Hyperblox</span>
+          <span class="logo-wording">Hyperblox</span>
         </div>
 
         <div class="menu">
@@ -38,31 +38,37 @@
             <li><a href="https://hpb.gitbook.io/high-performance-blockchain/" target="_blank">DEVELOPERS</a></li>
             <li><a href="https://medium.com/hpb-foundation" target="_blank">NEWS</a></li>
           </ul>
+
+          <div class="country-select">
+            <a href="index.html" class="country-select__button">
+              <img class="country-select__button__icon" src="./img/us.png" alt="globe icon">
+            </a>
+            <a href="index-cn.html" class="country-select__button">
+              <img class="country-select__button__icon" src="./img/china.png" alt="globe icon">
+            </a>
+          </div>
         </div>
-
-
-
-        <div class="country-select">
-          <a href="index.html" class="country-select__button">
-            <img class="country-select__button__icon" src="./img/us.png" alt="globe icon">
-          </a>
-          <a href="index-cn.html" class="country-select__button">
-            <img class="country-select__button__icon" src="./img/china.png" alt="globe icon">
-          </a>
-        </div>
-        
 
 
       </nav>
+
       <!-- Hero main text section -->
       <div class="hero">
         <h1 class="hero__title">Hyperblox</h1>
         <p class="hero__subtitle">Hypersonic L1 EVM Blockchain Solutions</p>
       </div>
+
+      <div class="hero">
+
+      <div id="videoContainer" class="video-container"></div>
+      </div>
+      
       <!-- Buttons -->
       <div class="buttons">
-        <button id="playVideoBtn" class="buttons__button buttons__button--primary">Play Video</button>
+        <button id="myButton" class="buttons__button buttons__button--primary">Play Video</button>
       </div>
+    
+    <!-- end of header-->  
     </header>
 
 
@@ -85,7 +91,7 @@
               <div class="what__cards">
                 <div class="what__card">
                   <img src="./img/boe_tk.jpg" alt="icon1" />
-                  <h2>BOE Hardware Accelerator</h2>
+                  <h2>BOE Hardware</h2>
                   <p>
                     The Blockchain Offload Engine card is a highly compatible customized hardware chipset 
                     with an embedded ECDSA module and a hardware random number generator.
@@ -103,7 +109,7 @@
                 
                 <div class="what__card">
                   <img src="./img/boe_code.jpg" alt="icon1" />
-                  <h2>HPB Consensus Algorithm</h2>
+                  <h2>HPB Consensus</h2>
                   <p>
                     HPB utilizes the Proof of Performance consensus algorithm (PoP), 
                     which generates HP-Nodes from the existing pool of 
@@ -172,7 +178,7 @@
             <div class="random__h3">
 
               <h3 style="background-color: #6b180d; border-radius: 10px; padding: 10px;">
-                <a href="http://hscan.org" style="color: white; text-decoration: none; transition: text-shadow 0.3s;">Click to view live random numbers</a>
+                <a href="http://hscan.org" style="color: white; text-decoration: none; transition: text-shadow 0.3s;">View live random numbers</a>
               </h3>
 
           </div>
@@ -185,7 +191,7 @@
     
     <!-- Footer  -->
     <footer class="footer">
-      <div class="container grid grid--footer">
+      <div class="container">
             <div class="logo-col">
               <a href="#" class="footer-logo">
                 <img class="hyperblox-logo-footer" src="./img/hyperblox_logo.png" alt="hyperblox logo">
@@ -205,8 +211,8 @@
               </p>
             </div>
       
-            <nav class="nav-col">
-              <p class="footer-heading">Useful Links</p>
+            <div class="useful-col">
+              <p class="footer-heading">Links</p>
               <ul class="nav-footer">
                 <li>
                   <a class="footer-link" href="https://hackernoon.com/provable-random-numbers-in-blockchain">RANDOM NUMBERS</a>
@@ -230,11 +236,11 @@
                   <a class="footer-link" href="https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null">Remix IDE</a>
                 </li>
               </ul>
-            </nav>
+            </div>
 
             
       
-            <nav class="nav-col">
+            <div class="resources-col">
               <p class="footer-heading">Resources</p>
               <ul class="nav-footer">
                 <li>
@@ -254,9 +260,9 @@
                 </li>
 
               </ul>
-            </nav>
+            </div>
       
-            <nav class="nav-col">
+            <div class="social-col">
               <p class="footer-heading">Socials</p>
               <ul class="nav-footer">
                 <li>
@@ -287,7 +293,39 @@
                   <a class="footer-link" href="https://www.youtube.com/@HPBCommunity">YouTube</a>
                 </li>
               </ul>
-            </nav>
+            </div>
+
+          </div>
+          <div class="social-mobile">
+            <div class="social-logo">
+              <a href="https://t.me/hpbglobal"><img class="hyperblox_logo" src="./img/telegram.png" alt="Telegram"></a>
+            </div>
+            <div class="social-logo">
+              <a href="https://twitter.com/METH_on_Blast"><img class="hyperblox_logo" src="./img/twitter-alt-circle.png" alt="Twitter"></a>
+            </div>
+            <div class="social-logo">
+              <a href="https://medium.com/@HPB_Global"><img class="hyperblox_logo" src="./img/medium.png" alt="Medium"></a>
+            </div>
+            <div class="social-logo">
+              <a href="https://www.facebook.com/groups/hpbglobal/"><img class="hyperblox_logo" src="./img/facebook.png" alt="Facebook"></a>
+            </div>
+            <div class="social-logo">
+              <a href="https://www.reddit.com/r/HPB_Global/"><img class="hyperblox_logo" src="./img/reddit.png" alt="Reddit"></a>
+            </div>
+            </div>
+            <div class="social-mobile">
+            <div class="social-logo">
+              <a href="https://www.instagram.com/hpbglobal/"><img class="hyperblox_logo" src="./img/instagram.png" alt="Instagram"></a>
+            </div>
+            <div class="social-logo">
+              <a href="https://discord.com/invite/dGGThEMExF"><img class="hyperblox_logo" src="./img/discord.png" alt="Discord"></a>
+            </div>
+            <div class="social-logo">
+              <a href="https://www.linkedin.com/company/high-performance-blockchain/"><img class="hyperblox_logo" src="./img/linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <div class="social-logo">
+              <a href="https://www.youtube.com/@HPBCommunity"><img class="hyperblox_logo" src="./img/youtube.png" alt="YouTube"></a>
+            </div>
           </div>
         </footer>
 
@@ -296,6 +334,6 @@
         
 <!-- End of footer -->
 
-
+<script src="./scripts.js"></script>
       </body>
 </html>
