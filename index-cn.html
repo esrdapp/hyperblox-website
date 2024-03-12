@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,68 +14,95 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <script src="./scripts.js"></script>
+    <!-- <script src="./scripts.js"></script> -->
 
     <link href="./styles.css" rel="stylesheet" />
     <link href="./queries.css" rel="stylesheet" >
-
-    <title>Hyperblox - 世界上最快的 L1 EVM 區塊鏈</title>
+    <title>Hyperblox - 全球最快的L1 EVM區塊鏈</title>
   </head>
 
   <body>
 
-<!-- Header section -->
-<header>
-  <nav>
-    <div class="logo">
-      <img class="hyperblox_logo" src="./img/hyperblox_logo.png" alt="hyperblox logo">
-      <span>
-        Hyperblox
-      </span>
-    </div>
-    <div class="menu">
-      <ul class="menu-list">
-        <li><a href="#tech">
-          科技</a></li>
-        <li><a href="#boe">京東方</a></li>
-        <li><a href="#trng">TRNG</a></li>
-        <li><a href="https://hpb.gitbook.io/high-performance-blockchain/" target="_blank">開發商</a></li>
-        <li><a href="https://medium.com/hpb-foundation" target="_blank">訊息
-        </a></li>
-      </ul>
-      <div class="burger-menu" onclick="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-    </div>
-    <div class="country-select">
-      <a href="index.html" class="country-select__button">
-        <img class="country-select__button__icon" src="./img/us.png" alt="globe icon">
-      </a>
-      <a href="index-cn.html" class="country-select__button">
-        <img class="country-select__button__icon" src="./img/china.png" alt="globe icon">
-      </a>
-    </div>
-  </nav>
+    <header>
+      <nav class="nav-container">
+        <div class="logo">
+          <img class="hyperblox_logo" src="./img/hyperblox_logo.png" alt="hyperblox logo">
+          <span class="logo-wording">Hyperblox</span>
+        </div>
 
-  <!-- Hero main text section -->
-  <div class="hero">
-    <h1 class="hero__title">Hyperblox</h1>
-    <p class="hero__subtitle">
-      Hypersonic L1 EVM 區塊鏈解決方案</p>
-  </div>
+        <div class="menu">
+          <ul class="menu-list">
+            <li><a href="#tech">技術</a></li>
+            <li><a href="#boe">BOE</a></li>
+            <li><a href="#trng">TRNG</a></li>
+            <li><a href="https://hpb.gitbook.io/high-performance-blockchain/" target="_blank">開發者</a></li>
+            <li><a href="https://medium.com/hpb-foundation" target="_blank">新聞</a></li>
+          </ul>
 
-  <!-- Buttons -->
-  <div class="buttons">
-    <button id="playVideoBtn" class="buttons__button buttons__button--primary">
-      播放影片
+          <div class="country-select">
+            <a href="index.html" class="country-select__button">
+              <img class="country-select__button__icon" src="./img/us.png" alt="globe icon">
+            </a>
+            <a href="index-cn.html" class="country-select__button">
+              <img class="country-select__button__icon" src="./img/china.png" alt="globe icon">
+            </a>
+          </div>
+        </div>
 
+        
+  <!-- Burger menu icon -->
+  <div class="burger-menu">
+    <button class="burger-menu__button" aria-label="切換菜單">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
   </div>
-  <!-- End of buttons -->
-</header>
-<!-- End of header section -->
+
+  <!-- Hidden menu for smaller screens -->
+  <div class="hidden-menu">
+    <ul class="hidden-menu-list">
+      <div>
+      <li><a href="#tech">技術</a></li>
+      </div>
+      <div>
+      <li><a href="#boe">BOE</a></li>
+      </div>
+      <div>
+      <li><a href="#trng">TRNG</a></li>
+      </div>
+      <div>
+      <li><a href="https://hpb.gitbook.io/high-performance-blockchain/" target="_blank">開發者</a></li>
+      </div>
+      <div>
+      <li><a href="https://medium.com/hpb-foundation" target="_blank">新聞</a></li>
+      </div>
+    </ul>
+  </div>
+
+
+      </nav>
+
+
+      <!-- Hero main text section -->
+      <div class="hero">
+        <h1 class="hero__title">Hyperblox</h1>
+        <p class="hero__subtitle">Hypersonic L1 EVM 區塊鏈解決方案</p>
+      </div>
+
+      <div class="hero">
+
+      <div id="videoContainer" class="video-container"></div>
+      </div>
+      
+      <!-- Buttons -->
+      <div class="buttons">
+        <button id="myButton" class="buttons__button buttons__button--primary">播放影片</button>
+      </div>
+    
+    <!-- end of header-->  
+    </header>
+
 
 
   <!-- Tech section -->
@@ -196,120 +223,146 @@
     <!-- End of TRNG section -->
     
     
-    <!-- Footer  -->
-    <footer class="footer">
-      <div class="container grid grid--footer">
-            <div class="logo-col">
-              <a href="#" class="footer-logo">
-                <img class="hyperblox-logo-footer" src="./img/hyperblox_logo.png" alt="hyperblox logo">
-              </a>
-      
-      
-              <p class="copyright">
-                Copyright &copy;
-                <span class="year">2024</span> Hyperblox (HPB) 保留所有權利。
-              </p>
-            </div>
-      
-            <div class="address-col">
-              <p class="footer-heading">聯絡我們</p>
-      
-              <a class="footer-link" href="info@hpb.io">info@hpb.io</a>
-              </p>
-            </div>
-      
-            <nav class="useful-col">
-              <p class="footer-heading">有用的連結</p>
-              <ul class="nav-footer">
-                <li>
-                  <a class="footer-link" href="https://hackernoon.com/provable-random-numbers-in-blockchain">
-                    隨機數</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://www.youtube.com/watch?v=Pi9RWqpUSis">執行長訪談</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://hscan.org/faucet/">龍頭</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://hpb.gitbook.io/high-performance-blockchain/developers/sdks">SDK</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://www.hpb.io/post-362">TPS報告</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://vote.hpbnode.com/">Masternodes</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null">Remix IDE</a>
-                </li>
-              </ul>
-            </nav>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="logo-col">
+      <a href="#" class="footer-logo">
+        <img class="hyperblox-logo-footer" src="./img/hyperblox_logo.png" alt="hyperblox logo">
+      </a>
 
-            
-      
-            <nav class="resources-col">
-              <p class="footer-heading">資源</p>
-              <ul class="nav-footer">
-                <li>
-                  <a class="footer-link" href="https://hscan.org">HPB 區塊瀏覽器</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://hpb.gitbook.io/high-performance-blockchain/">Gitbook</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://hpb.gitbook.io/high-performance-blockchain/getting-started/wallets/metamask">設定元掩碼</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://hpb.gitbook.io/high-performance-blockchain/what-is-high-performance-blockchain-hpb/blockchain-offload-engine-boe">BOE INFO</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://github.com/hpb-project">GITHUB</a>
-                </li>
 
-              </ul>
-            </nav>
-      
-            <nav class="social-col">
-              <p class="footer-heading">社群</p>
-              <ul class="nav-footer">
-                <li>
-                  <a class="footer-link" href="https://t.me/hpbglobal">Telegram</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://twitter.com/METH_on_Blast">Twitter</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://medium.com/@HPB_Global">Medium</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://www.facebook.com/groups/hpbglobal/">Facebook</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://www.reddit.com/r/HPB_Global/">Reddit</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://www.instagram.com/hpbglobal/">Instagram</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://discord.com/invite/dGGThEMExF">Discord</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://www.linkedin.com/company/high-performance-blockchain/">LinkedIn</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="https://www.youtube.com/@HPBCommunity">YouTube</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </footer>
+      <p class="copyright">
+        版權所有 &copy;
+        <span class="year">2024</span> Hyperblox (HPB) 保留所有權利。
+      </p>
+    </div>
 
-        
-        
-        
+    <div class="address-col">
+      <p class="footer-heading">聯繫我們</p>
+
+      <a class="footer-link" href="info@hpb.io">info@hpb.io</a>
+      </p>
+    </div>
+
+    <div class="useful-col">
+      <p class="footer-heading">鏈接</p>
+      <ul class="nav-footer">
+        <li>
+          <a class="footer-link" href="https://hackernoon.com/provable-random-numbers-in-blockchain">隨機數字</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://www.youtube.com/watch?v=Pi9RWqpUSis">首席執行官訪談</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://hscan.org/faucet/">水龍頭</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://hpb.gitbook.io/high-performance-blockchain/developers/sdks">SDK</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://www.hpb.io/post-362">TPS報告</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://vote.hpbnode.com/">Masternodes</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null">Remix IDE</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="resources-col">
+      <p class="footer-heading">資源</p>
+      <ul class="nav-footer">
+        <li>
+          <a class="footer-link" href="https://hscan.org">HPB區塊鏈瀏覽器</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://hpb.gitbook.io/high-performance-blockchain/">Gitbook</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://hpb.gitbook.io/high-performance-blockchain/getting-started/wallets/metamask">設置METAMASK</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://hpb.gitbook.io/high-performance-blockchain/what-is-high-performance-blockchain-hpb/blockchain-offload-engine-boe">BOE信息</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://github.com/hpb-project">GITHUB</a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="social-col">
+      <p class="footer-heading">社交媒體</p>
+      <ul class="nav-footer">
+        <li>
+          <a class="footer-link" href="https://t.me/hpbglobal">Telegram</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://twitter.com/METH_on_Blast">Twitter</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://medium.com/@HPB_Global">Medium</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://www.facebook.com/groups/hpbglobal/">Facebook</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://www.reddit.com/r/HPB_Global/">Reddit</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://www.instagram.com/hpbglobal/">Instagram</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://discord.com/invite/dGGThEMExF">Discord</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://www.linkedin.com/company/high-performance-blockchain/">LinkedIn</a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://www.youtube.com/@HPBCommunity">YouTube</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="social-mobile">
+    <div class="social-logo">
+      <a href="https://t.me/hpbglobal"><img class="hyperblox_logo" src="./img/telegram.png" alt="Telegram"></a>
+    </div>
+    <div class="social-logo">
+      <a href="https://twitter.com/METH_on_Blast"><img class="hyperblox_logo" src="./img/twitter-alt-circle.png" alt="Twitter"></a>
+    </div>
+    <div class="social-logo">
+      <a href="https://medium.com/@HPB_Global"><img class="hyperblox_logo" src="./img/medium.png" alt="Medium"></a>
+    </div>
+    <div class="social-logo">
+      <a href="https://www.facebook.com/groups/hpbglobal/"><img class="hyperblox_logo" src="./img/facebook.png" alt="Facebook"></a>
+    </div>
+    <div class="social-logo">
+      <a href="https://www.reddit.com/r/HPB_Global/"><img class="hyperblox_logo" src="./img/reddit.png" alt="Reddit"></a>
+    </div>
+  </div>
+  <div class="social-mobile">
+    <div class="social-logo">
+      <a href="https://www.instagram.com/hpbglobal/"><img class="hyperblox_logo" src="./img/instagram.png" alt="Instagram"></a>
+    </div>
+    <div class="social-logo">
+      <a href="https://discord.com/invite/dGGThEMExF"><img class="hyperblox_logo" src="./img/discord.png" alt="Discord"></a>
+    </div>
+    <div class="social-logo">
+      <a href="https://www.linkedin.com/company/high-performance-blockchain/"><img class="hyperblox_logo" src="./img/linkedin.png" alt="LinkedIn"></a>
+    </div>
+    <div class="social-logo">
+      <a href="https://www.youtube.com/@HPBCommunity"><img class="hyperblox_logo" src="./img/youtube.png" alt="YouTube"></a>
+    </div>
+  </div>
+</footer>
 <!-- End of footer -->
 
-
-      </body>
+<script src="./scripts.js"></script>
+</body>
 </html>

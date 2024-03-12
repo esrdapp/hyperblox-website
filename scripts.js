@@ -112,3 +112,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the burger menu button
+  var burgerMenuButton = document.querySelector(".burger-menu__button");
+
+  // Get the hidden menu
+  var hiddenMenu = document.querySelector(".hidden-menu");
+
+  // Toggle the active class on click
+  burgerMenuButton.addEventListener("click", function () {
+    this.classList.toggle("active");
+
+    // Toggle the visibility of the hidden menu
+    hiddenMenu.classList.toggle("visible");
+  });
+});

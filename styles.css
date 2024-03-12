@@ -65,6 +65,15 @@ nav {
   z-index: 1000; /* Set a higher z-index value */
 }
 
+.burger-menu {
+  display: none; /* Initially hide the burger menu */
+}
+
+/* Initially hide the hidden menu */
+.hidden-menu {
+  display: none;
+}
+
 .logo {
   /* display: inline-block; */
   display: flex; /* Use Flexbox */

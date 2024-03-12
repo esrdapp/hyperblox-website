@@ -242,34 +242,97 @@
 
 @media (max-width: 960px) {
   .menu {
-    display: none;
+    display: none; /* Hide the menu on smaller screens */
   }
 
   .burger-menu {
-    display: block;
+    display: block; /* Show the burger menu on smaller screens */
+    color: #ffffff;
   }
 
-  .burger-menu.active .bar {
-    display: none;
+  /* Style the burger menu icon */
+  .burger-menu__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative; /* Add relative positioning */
+    z-index: 9999; /* Ensure the icon is on top */
+    color: #ffffff;
   }
 
-  .menu-list {
+  /* Style the burger menu icon spans */
+  .burger-menu__button span {
     display: block;
-    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  /* Rotate the first and third spans to create a cross icon */
+  .burger-menu__button span:first-child {
+    transform-origin: 0 0;
+  }
+
+  .burger-menu__button span:last-child {
+    transform-origin: 0 100%;
+  }
+
+  /* Show/hide the hidden menu when the burger menu is clicked */
+  .burger-menu__button.active span:first-child {
+    transform: rotate(45deg);
+  }
+
+  .burger-menu__button.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu__button.active span:last-child {
+    transform: rotate(-45deg);
+  }
+
+  /* Show the hidden menu when the .visible class is applied */
+  .hidden-menu.visible {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center; /* Center align the menu items horizontally */
+    justify-content: center; /* Center align the menu items vertically */
+    position: absolute; /* Position the menu relative to the viewport */
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
+    right: 0;
+    background-color: #9c0404f6; /* Background color for the menu */
+    color: #ffffff;
+    width: 100%; /* Make the menu span the full width of the viewport */
+    padding: 10px; /* Add padding around the menu items */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
   }
 
-  .menu-list a {
-    font-size: 2rem;
+  /* Style the menu items */
+  .hidden-menu.visible li {
+    list-style-type: none; /* Remove default list style */
+    margin: 10px 0; /* Add vertical margin between menu items */
+    color: #ffffff;
+  }
+
+  /* Style the links inside the menu items */
+  .hidden-menu.visible li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ffffff; /* Set color for the links */
+    font-size: 4rem; /* Set font size for the links */
+    font-weight: 600;
+    transition: color 0.3s; /* Add transition for color change */
+  }
+
+  /* Style for links on hover */
+  .hidden-menu.visible li a:hover {
+    color: #ffffff; /* Change color on hover */
+  }
+
+  /* Show the hidden menu when the burger menu is clicked */
+  .burger-menu__button.active ~ .hidden-menu {
+    display: block;
   }
 }
 
@@ -422,7 +485,8 @@
   }
 
   .technology__card img {
-    width: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .container {
