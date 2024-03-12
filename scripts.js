@@ -65,29 +65,32 @@
 // }
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Get reference to the button and the video container
   var button = document.getElementById("myButton");
-  var videoContainer = document.querySelector(".video-container"); // Use querySelector to select by class
+  var videoContainer = document.querySelector(".video-container");
+  var video;
 
-  // Add click event listener to the button
   button.addEventListener("click", function () {
-    // Hide the button
     button.style.display = "none";
 
-    // Create an iframe element for the YouTube video
     var iframe = document.createElement("iframe");
     iframe.setAttribute("width", "960");
-    iframe.setAttribute("height", "540");
+    iframe.setAttribute("height", "450");
     iframe.setAttribute(
       "src",
-      "https://www.youtube.com/embed/tuDu22bivkE?rel=0?version=3&autoplay=1&controls=0&&showinfo=0&loop=1"
+      "https://player.vimeo.com/video/922422240?autoplay=1&loop=0&background=1&muted=0"
     );
     iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allow", "autoplay; fullscreen"); // This is the correct way to specify permissions
     iframe.setAttribute("allowfullscreen", "true");
-    iframe.setAttribute("allow", "autoplay"); // Allow autoplay
 
-    // Append the iframe to the video container
+    video = iframe;
     videoContainer.appendChild(iframe);
+
+    // Set timeout to reset after 36 seconds
+    setTimeout(function () {
+      button.style.display = "block"; // Show the button
+      videoContainer.removeChild(video); // Remove the video element
+    }, 37000); // 36 seconds in milliseconds
   });
 });
 

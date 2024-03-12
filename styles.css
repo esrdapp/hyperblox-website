@@ -65,6 +65,10 @@ nav {
   z-index: 1000; /* Set a higher z-index value */
 }
 
+.country-select {
+  display: inline-block; /* Ensure country-select section is always visible */
+}
+
 .burger-menu {
   display: none; /* Initially hide the burger menu */
 }
@@ -310,7 +314,8 @@ h3 {
   position: absolute;
 
   height: auto;
-  bottom: 1.5rem;
+  width: 100%;
+  bottom: 5rem;
   left: 50%;
   transform: translateX(-50%);
   overflow: hidden; /* Hide overflow content */

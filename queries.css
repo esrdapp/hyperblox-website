@@ -38,6 +38,10 @@
     font-size: 1.68rem; /* 1.6rem * 0.8 */
   }
 
+  .country-select {
+    display: block; /* Ensure country-select section is always visible */
+  }
+
   .menu ul li {
     margin-right: 2rem; /* 20px * 0.8 */
     font-size: 3rem;
