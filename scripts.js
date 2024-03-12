@@ -81,7 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     iframe.setAttribute("frameborder", "0");
     iframe.setAttribute("allow", "autoplay; fullscreen"); // This is the correct way to specify permissions
-    iframe.setAttribute("allowfullscreen", "true");
 
     video = iframe;
     videoContainer.appendChild(iframe);
